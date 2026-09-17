@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 问答 · Timothy Li</title>
+<meta name="description" content="李烨的数字分身 —— 关于背景、实习经历与项目的问答（占位版本）">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-body">
+
+<div class="chat-topbar">
+  <a class="chat-back" href="index.html" title="返回主页">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <div class="chat-title">AI 问答助手 <span>· 李烨的数字分身</span></div>
+  <div class="chat-status">
+    <a class="chat-back" href="mailto:13576203570@163.com" title="邮箱">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </a>
+    <button class="chat-back" id="themeToggle" type="button" title="切换深色模式">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    </button>
+    <span class="status-label"><span class="status-dot"></span>占位版</span>
+  </div>
+</div>
+
+<div class="chat-body-scroll" id="scrollArea">
+  <div class="chat-hero" id="heroBlock">
+    <div class="chat-avatar">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 20c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <h1>你好，我是李烨的数字分身</h1>
+    <p>可以问我背景、实习经历、项目相关的问题</p>
+    <div class="chat-suggest-grid" id="suggestGrid"></div>
+  </div>
+
+  <div class="chat-thread" id="thread"></div>
+</div>
+
+<div class="chat-inputbar">
+  <div class="chat-input-shell">
+    <textarea id="chatInput" rows="1" placeholder="输入问题，Enter 发送，Shift+Enter 换行…"></textarea>
+    <button class="chat-send" id="chatSend" type="button" title="发送">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <p class="chat-footnote">占位版本 · 回答来自本页内置的预设内容，不会调用任何外部服务或上传你的问题</p>
+</div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
